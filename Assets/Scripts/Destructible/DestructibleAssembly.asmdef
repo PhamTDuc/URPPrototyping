@@ -1,0 +1,16 @@
+{
+    "name": "DestructibleAssembly",
+    "references": [
+        "GUID:76faccef34872fa4a867622b1199bd21",
+        "GUID:63752dcbbb9b116439696e6613c44cf5"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
