@@ -18,11 +18,14 @@ namespace Guinea.UI
         public void NextLevel()
         {
             Commons.Log("Go to NextLevel^^");
+            MasterManager.GetLevelManager().LoadNextLevel();
         }
 
         public void Resume()
         {
             Commons.Log("Resume this level^^");
+            MasterManager.GetLevelManager().RestartCurrentLevel();
+
         }
         public void MainMenu()
         {

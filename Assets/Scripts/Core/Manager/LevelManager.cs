@@ -16,12 +16,14 @@ namespace Guinea.Core
         private bool isRunning;
 
         public event Action<string> OnGameOverEvent = delegate { };
+        public GameStatus gameStatus { get; private set; }
 
         public ManagerStatus status { get; private set; }
 
         void Start()
         {
             Commons.Assert(timer != null, "TimerCountDown could not be null!!");
+            gameStatus = GameStatus.GAME_RUNNING;
             timer.SetDuration(duration).OnFinish(OnFinish);
             timer.ResetTimer();
         }
@@ -63,6 +65,7 @@ namespace Guinea.Core
         {
             timer.gameObject.SetActive(false);
             Time.timeScale = 0.0f;
+            gameStatus = GameStatus.GAME_OVER;
             OnGameOverEvent(this.team);
             Commons.Log($"Game Over. Team {this.team} win!!!");
         }

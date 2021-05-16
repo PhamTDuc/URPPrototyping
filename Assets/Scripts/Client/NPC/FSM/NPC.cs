@@ -47,7 +47,7 @@ namespace Guinea
             fsm.AddAnyTransition(goBackward, chaseToGoBackward);
             #endregion
 
-            fsm.ChangeState(toSite);
+            fsm.ChangeState(patrol);
 
             bool patrolToChase()
             {
