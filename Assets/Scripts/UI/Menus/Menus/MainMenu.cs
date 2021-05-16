@@ -27,7 +27,7 @@ namespace Guinea.UI
             {
                 float progress = Mathf.Clamp01(op.progress / 0.9f);
                 slider.value = progress;
-                progressText.text = progress * 100 + "%";
+                progressText.text = progress.ToString("P1");
                 Commons.Log("Progress: " + progress);
                 yield return null;
             }
@@ -40,6 +40,7 @@ namespace Guinea.UI
         public void Quit()
         {
             Commons.Log("Quit !!!!");
+            Application.Quit();
         }
 
         public virtual void OnBackKeyEvent()

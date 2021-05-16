@@ -55,7 +55,7 @@ namespace Guinea.Destructible
 
         protected virtual void DestroyWhenDied()
         {
-            Commons.Log("Destroy when died called "+ gameObject.name);
+            Commons.Log("Destroy when died called " + gameObject.name);
             if (destroyedVersion != null)
             {
                 Instantiate(destroyedVersion, transform.position, transform.rotation); // TODO: Using PoolManager instead of Instantiate

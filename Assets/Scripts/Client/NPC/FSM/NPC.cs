@@ -15,6 +15,7 @@ namespace Guinea
         private Chase chase;
         private Attack attack;
         private GoBackward goBackward;
+        private ToSite toSite;
         private FindAmmo findAmmo;
         #endregion
         private ICarAI carAI;
@@ -32,6 +33,7 @@ namespace Guinea
             chase = new Chase(fsm, carAI, memory, playable);
             attack = new Attack(fsm, carAI, memory, playable);
             goBackward = new GoBackward(fsm, carAI, memory, playable);
+            toSite = new ToSite(fsm, carAI, memory, playable);
             findAmmo = new FindAmmo(fsm, carAI, memory, playable);
             #endregion
 
@@ -45,7 +47,7 @@ namespace Guinea
             fsm.AddAnyTransition(goBackward, chaseToGoBackward);
             #endregion
 
-            fsm.ChangeState(patrol);
+            fsm.ChangeState(toSite);
 
             bool patrolToChase()
             {
