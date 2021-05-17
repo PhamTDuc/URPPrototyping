@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+using UnityEngine.EventSystems;
 namespace Guinea
 {
     public class CameraController : MonoBehaviour
@@ -31,11 +31,13 @@ namespace Guinea
 
         void OnValidate()
         {
-            initialZoom = initialZoom<minZoom?minZoom:initialZoom;
-            initialZoom = initialZoom>maxZoom?maxZoom:initialZoom;
+            initialZoom = initialZoom < minZoom ? minZoom : initialZoom;
+            initialZoom = initialZoom > maxZoom ? maxZoom : initialZoom;
         }
         void Update()
         {
+            if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+                return;
             currentZoom -= Input.GetAxis("Mouse ScrollWheel") * zoomSpeed;
             currentZoom = Mathf.Clamp(currentZoom, minZoom, maxZoom);
             currentYaw += Input.GetAxis("Mouse X") * yawSpeed;
