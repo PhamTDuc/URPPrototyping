@@ -5,6 +5,7 @@
         None = 0,
         Loading,
         Options,
+        HowToPlay,
         MainMenu,
     }
 

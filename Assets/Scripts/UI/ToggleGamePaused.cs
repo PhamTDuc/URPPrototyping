@@ -56,6 +56,12 @@ namespace Guinea.UI
             Commons.Log("Resume in GamePaused called");
             Toggle();
         }
+        public void Restart()
+        {
+            Commons.Log("Restart in GamePaused");
+            MasterManager.GetLevelManager().RestartCurrentLevel();
+        }
+
         public void MainMenu()
         {
             Commons.Log("Call MainMenu from GamePaused^^");

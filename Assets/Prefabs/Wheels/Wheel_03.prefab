@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   properties:
-    maxHealth: 150
-    currentHealth: 150
+    maxHealth: 200
+    currentHealth: 200
   destroyParent: 1
   destroyedVersion: {fileID: 0}

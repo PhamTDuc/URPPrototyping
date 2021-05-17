@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 23000013730734082}
   - component: {fileID: 271307838}
   - component: {fileID: 271307837}
-  - component: {fileID: 271307836}
   m_Layer: 0
   m_Name: Wooden Crate
   m_TagString: Untagged
@@ -113,19 +112,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 121.772705, y: 102.35167, z: 101.00458}
   m_Center: {x: 0.09588623, y: 51.056816, z: -0.0934124}
---- !u!114 &271307836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000011275823026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e90866663cbab6a47997dae67759e76a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  properties:
-    maxHealth: 0
-    currentHealth: 0
-  destroyedVersion: {fileID: 0}

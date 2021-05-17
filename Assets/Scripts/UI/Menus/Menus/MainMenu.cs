@@ -37,6 +37,13 @@ namespace Guinea.UI
             Commons.Log("Options !!!!!");
             Open(MenuType.Options);
         }
+
+        public void HowToPlay()
+        {
+            Commons.Log("How to Play !!!!!");
+            Open(MenuType.HowToPlay);
+        }
+
         public void Quit()
         {
             Commons.Log("Quit !!!!");
