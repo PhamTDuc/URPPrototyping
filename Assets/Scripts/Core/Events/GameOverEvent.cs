@@ -6,5 +6,6 @@ namespace Guinea.Event
     public interface GameOverEvent
     {
         event Action<string> OnGameOverEvent;
+        event Action<string> OnGameOverLose;
     }
 }

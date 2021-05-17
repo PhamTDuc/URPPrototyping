@@ -16,6 +16,8 @@ namespace Guinea.Core
         private bool isRunning;
 
         public event Action<string> OnGameOverEvent = delegate { };
+        public event Action<string> OnGameOverLose = delegate { };
+
         public GameStatus gameStatus { get; private set; }
 
         public ManagerStatus status { get; private set; }
@@ -78,7 +80,11 @@ namespace Guinea.Core
                 this.team = null;
                 timer.ResetTimer();
             }
+        }
 
+        public void CallGameOverLose() // When Player died
+        {
+            OnGameOverLose("EnemyTeam");
         }
     }
 }
