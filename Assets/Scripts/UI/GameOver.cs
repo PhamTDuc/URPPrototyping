@@ -49,6 +49,7 @@ namespace Guinea.UI
         {
             OnGameOver(name);
             nextLevelBtn.SetActive(false);
+            Time.timeScale = 0.0f;
         }
     }
 }

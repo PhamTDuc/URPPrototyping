@@ -4916,6 +4916,14 @@ PrefabInstance:
       propertyPath: attackRange
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 542488842969149522, guid: d21996a85529aa94a9cff07a1d70d78e, type: 3}
+      propertyPath: m_Mass
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 542488842969149522, guid: d21996a85529aa94a9cff07a1d70d78e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 542488842969149525, guid: d21996a85529aa94a9cff07a1d70d78e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -122
@@ -25559,6 +25567,14 @@ PrefabInstance:
       propertyPath: attackRange
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 542488842969149522, guid: d21996a85529aa94a9cff07a1d70d78e, type: 3}
+      propertyPath: m_Mass
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 542488842969149522, guid: d21996a85529aa94a9cff07a1d70d78e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 542488842969149525, guid: d21996a85529aa94a9cff07a1d70d78e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -138.03
@@ -25688,6 +25704,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4483642119014516291, guid: 784bc26430c863142aa24ddabb98be3b, type: 3}
+      propertyPath: m_Mass
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483642119014516291, guid: 784bc26430c863142aa24ddabb98be3b, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4483642119014516294, guid: 784bc26430c863142aa24ddabb98be3b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 126.7
